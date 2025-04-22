@@ -1,3 +1,4 @@
+
 import { FileText, BadgeCheck, Users, Truck, LifeBuoy } from "lucide-react";
 
 const ICONS = [
@@ -22,17 +23,19 @@ export default function ServicesSection() {
         }}
         id="help"
       >
-        <div className="pl-6 md:pl-16 pr-4 max-w-[630px] flex flex-col justify-center h-full">
-          <h2 className="text-white text-2xl md:text-4xl font-extrabold leading-tight mb-2 tracking-tight uppercase animate-fade-in text-left">
-            WE HANDLE EVERYTHING
-          </h2>
-          <div className="text-white text-base md:text-xl font-medium mb-5 animate-fade-in text-left leading-snug">
-            from site selection to legal setup, workforce recruitment, and logistics,
-            so you <br className="hidden md:block"/> can focus on growing your business.
+        <div className="pl-6 md:pl-16 pr-4 max-w-[630px] w-full flex items-center justify-between h-full">
+          <div className="flex-1 text-left">
+            <h2 className="text-white text-2xl md:text-4xl font-extrabold leading-tight mb-2 tracking-tight uppercase animate-fade-in">
+              WE HANDLE EVERYTHING
+            </h2>
+            <div className="text-white text-base md:text-xl font-medium mb-5 animate-fade-in leading-snug">
+              from site selection to legal setup, workforce recruitment, and logistics,
+              so you <br className="hidden md:block"/> can focus on growing your business.
+            </div>
           </div>
           <a
             href="#consult"
-            className="bg-[#24bb67] px-8 py-3 w-fit rounded-md text-white text-base md:text-lg font-extrabold shadow hover:scale-105 transition-all hover:bg-[#1aa857] animate-fade-in"
+            className="bg-[#24bb67] px-8 py-3 rounded-md text-white text-base md:text-lg font-extrabold shadow hover:scale-105 transition-all hover:bg-[#1aa857] animate-fade-in"
             style={{ letterSpacing: "0.01em" }}
           >
             CONTACT US
