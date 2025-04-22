@@ -5,12 +5,12 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-[530px] pt-28 pb-20 flex items-center justify-center bg-cover bg-center"
+      className="relative min-h-[530px] pt-28 pb-20 flex items-center justify-start bg-cover bg-center"
       style={{
         backgroundImage: `url('${bgImage}')`,
       }}
     >
-      <div className="max-w-3xl mx-auto z-10 text-left px-6 md:px-0">
+      <div className="max-w-3xl ml-6 md:ml-12 z-10 text-left px-6 md:px-0">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-1 leading-tight animate-fade-in">
           NEARSHORING MADE SIMPLE
         </h1>
