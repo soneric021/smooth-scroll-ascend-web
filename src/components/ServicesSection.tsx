@@ -1,4 +1,3 @@
-
 import { FileText, BadgeCheck, Users, Truck, LifeBuoy } from "lucide-react";
 
 const ICONS = [
@@ -9,38 +8,35 @@ const ICONS = [
   { icon: <LifeBuoy className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Ongoing Support", desc: "We’re with you every step of the way" },
 ];
 
-// Banner background
-const bannerBg = "/lovable-uploads/7d3e349c-ce15-4722-9799-11904aef6a5f.png";
+// Use the image provided by the user as the new banner
+const bannerBg = "/lovable-uploads/976a8b5a-4758-4146-b8c5-9e7609be7c50.png";
 
 export default function ServicesSection() {
   return (
     <>
-      {/* Custom Banner for "We Handle Everything" */}
+      {/* Custom Banner - Left-aligned, using user-supplied image */}
       <section
-        className="w-full h-[190px] md:h-[200px] flex items-center bg-cover bg-center relative"
+        className="w-full h-[180px] md:h-[210px] flex items-center bg-cover bg-left relative"
         style={{
-          backgroundImage: `url('${bannerBg}')`
+          backgroundImage: `url('${bannerBg}')`,
         }}
         id="help"
       >
-        <div className="flex flex-col md:flex-row items-center md:items-start w-full max-w-7xl pl-6 md:pl-16 gap-8">
-          <div className="flex-1 min-w-0">
-            <h2 className="text-white text-3xl md:text-5xl font-extrabold leading-none mb-3 tracking-tight uppercase animate-fade-in">
-              WE HANDLE EVERYTHING
-            </h2>
-            <div className="text-white text-lg md:text-2xl font-medium animate-fade-in">
-              from site selection to legal setup, workforce recruitment, and logistics, so you<br className="hidden md:block"/> can focus on growing your business.
-            </div>
+        <div className="pl-6 md:pl-16 pr-4 max-w-[630px] flex flex-col justify-center h-full">
+          <h2 className="text-white text-2xl md:text-4xl font-extrabold leading-tight mb-2 tracking-tight uppercase animate-fade-in text-left">
+            WE HANDLE EVERYTHING
+          </h2>
+          <div className="text-white text-base md:text-xl font-medium mb-5 animate-fade-in text-left leading-snug">
+            from site selection to legal setup, workforce recruitment, and logistics,
+            so you <br className="hidden md:block"/> can focus on growing your business.
           </div>
-          <div className="flex-shrink-0 w-full md:w-auto flex md:justify-end justify-center mt-6 md:mt-0">
-            <a
-              href="#consult"
-              className="bg-[#24bb67] px-10 py-5 rounded-lg text-white text-lg md:text-2xl font-extrabold shadow hover:scale-105 transition-all hover:bg-[#1aa857] animate-fade-in"
-              style={{ letterSpacing: "0.01em" }}
-            >
-              CONTACT US
-            </a>
-          </div>
+          <a
+            href="#consult"
+            className="bg-[#24bb67] px-8 py-3 w-fit rounded-md text-white text-base md:text-lg font-extrabold shadow hover:scale-105 transition-all hover:bg-[#1aa857] animate-fade-in"
+            style={{ letterSpacing: "0.01em" }}
+          >
+            CONTACT US
+          </a>
         </div>
       </section>
       {/* "How can we help?" section */}
