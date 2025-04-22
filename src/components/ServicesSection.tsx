@@ -25,7 +25,7 @@ export default function ServicesSection() {
               WE HANDLE EVERYTHING
             </h2>
             <p className="text-white text-base md:text-lg font-medium mb-6 max-w-[640px]">
-              From site selection to legal setup, workforce recruitment, and logistics, so you can focus on growing your business.
+              <center>From site selection to legal setup, workforce recruitment, and logistics, so you can focus on growing your business.</center>
             </p>
           </div>
           <div className="flex justify-start md:justify-end w-full md:w-2/5">
