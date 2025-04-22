@@ -1,5 +1,5 @@
 
-const bgImage = "/lovable-uploads/5c11bde0-b793-449b-9679-f35753aefaba.png";
+const bgImage = "/lovable-uploads/c1a13f11-d4b8-42e5-8096-237fd8d1ed77.png";
 
 export default function HeroSection() {
   return (
