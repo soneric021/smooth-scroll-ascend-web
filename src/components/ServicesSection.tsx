@@ -1,4 +1,3 @@
-
 import { FileText, BadgeCheck, Users, Truck, LifeBuoy } from "lucide-react";
 
 const ICONS = [
@@ -6,7 +5,7 @@ const ICONS = [
   { icon: <BadgeCheck className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Legal & Permits", desc: "Fast and hassle-free setup" },
   { icon: <Users className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Recruiting & HR", desc: "Skilled workforce, ready to go" },
   { icon: <Truck className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Logistics & Operations", desc: "Shipping, supply chain, and setup" },
-  { icon: <LifeBuoy className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Ongoing Support", desc: "We’re with you every step of the way" },
+  { icon: <LifeBuoy className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Ongoing Support", desc: "We're with you every step of the way" },
 ];
 
 export default function ServicesSection() {
@@ -40,12 +39,7 @@ export default function ServicesSection() {
         </div>
       </section>
       {/* "How can we help?" section */}
-      <section
-        className="py-14 relative overflow-hidden -mt-5 z-20"
-        style={{
-          background: "url('/lovable-uploads/67b26da0-8c9c-4a71-9b5f-e6698f97780a.png') center/cover no-repeat",
-        }}
-      >
+      <section className="bg-white py-14 relative overflow-hidden -mt-5 z-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl text-center font-bold mb-9 tracking-tight uppercase">
             HOW CAN WE HELP?
