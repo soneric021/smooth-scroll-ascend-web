@@ -5,9 +5,9 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-[530px] pt-28 pb-20 flex items-center justify-center"
+      className="relative min-h-[530px] pt-28 pb-20 flex items-center justify-center bg-cover bg-center"
       style={{
-        background: `linear-gradient(rgba(2,44,56,0.72), rgba(2,44,56,0.77)), url('${bgImage}') center/cover no-repeat`,
+        backgroundImage: `url('${bgImage}')`,
       }}
     >
       <div className="max-w-3xl mx-auto z-10 text-left px-6 md:px-0">
@@ -28,8 +28,6 @@ export default function HeroSection() {
           FIND OUT MORE
         </a>
       </div>
-      {/* Overlay */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-[#01465899] to-[#003c4d77] pointer-events-none z-0" />
     </section>
   );
 }
