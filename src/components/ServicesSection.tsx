@@ -1,4 +1,3 @@
-
 import { FileText, BadgeCheck, Users, Truck, LifeBuoy } from "lucide-react";
 
 const ICONS = [
@@ -17,7 +16,7 @@ export default function ServicesSection() {
         <div
           className="absolute inset-0 opacity-15 pointer-events-none"
           style={{
-            background: "url('/lovable-uploads/5c11bde0-b793-449b-9679-f35753aefaba.png') center/cover no-repeat",
+            background: "url('/lovable-uploads/e45c85fc-2815-4d3f-996f-544b303901af.png') center/cover no-repeat",
           }}
         />
         <div className="max-w-6xl mx-auto relative z-10 px-4 flex flex-col md:flex-row md:items-center md:justify-between">
