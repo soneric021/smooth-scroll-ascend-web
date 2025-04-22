@@ -9,34 +9,21 @@ const ICONS = [
   { icon: <LifeBuoy className="w-10 h-10 mx-auto text-[#24bb67]" />, title: "Ongoing Support", desc: "We’re with you every step of the way" },
 ];
 
-// Use the image provided by the user as the new banner
-const bannerBg = "/lovable-uploads/976a8b5a-4758-4146-b8c5-9e7609be7c50.png";
-
 export default function ServicesSection() {
   return (
     <>
-      {/* Custom Banner - Left-aligned, using user-supplied image */}
-      <section
-        className="w-full h-[180px] md:h-[210px] flex items-center bg-cover bg-left relative"
-        style={{
-          backgroundImage: `url('${bannerBg}')`,
-        }}
-        id="help"
-      >
-        <div className="pl-6 md:pl-16 pr-4 max-w-[630px] w-full flex items-center justify-between h-full">
-          <div className="flex-1 text-left">
-            <h2 className="text-white text-2xl md:text-4xl font-extrabold leading-tight mb-2 tracking-tight uppercase animate-fade-in">
-              WE HANDLE EVERYTHING
-            </h2>
-            <div className="text-white text-base md:text-xl font-medium mb-5 animate-fade-in leading-snug">
-              from site selection to legal setup, workforce recruitment, and logistics,
-              so you <br className="hidden md:block"/> can focus on growing your business.
-            </div>
-          </div>
+      {/* "We handle everything" */}
+      <section className="relative bg-[#0b4265] pt-16 pb-8" id="help">
+        <div className="absolute inset-0 opacity-15 pointer-events-none"
+          style={{ background: "url('/lovable-uploads/5c11bde0-b793-449b-9679-f35753aefaba.png') center/cover no-repeat" }} />
+        <div className="max-w-6xl mx-auto text-center relative z-10 px-4">
+          <h2 className="text-white text-3xl md:text-4xl font-bold mb-3 tracking-tight uppercase">WE HANDLE EVERYTHING</h2>
+          <p className="text-white text-base md:text-lg font-medium mb-6 max-w-[640px] mx-auto">
+            From site selection to legal setup, workforce recruitment, and logistics, so you can focus on growing your business.
+          </p>
           <a
             href="#consult"
-            className="bg-[#24bb67] px-8 py-3 rounded-md text-white text-base md:text-lg font-extrabold shadow hover:scale-105 transition-all hover:bg-[#1aa857] animate-fade-in"
-            style={{ letterSpacing: "0.01em" }}
+            className="inline-block bg-[#24bb67] px-7 py-2 rounded-md text-white font-bold shadow hover:bg-[#1aa857] transition"
           >
             CONTACT US
           </a>
