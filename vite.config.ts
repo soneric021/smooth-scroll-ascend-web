@@ -10,10 +10,8 @@ export default defineConfig(({ mode }) => ({
     port: mode === 'development' ? 8080 : undefined,
   },
   plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+    react()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
