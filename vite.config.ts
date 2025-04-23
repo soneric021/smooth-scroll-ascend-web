@@ -6,10 +6,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
-    port: 8080,
+    host: mode === 'development' ? "::" : "https://soneric021.github.io/smooth-scroll-ascend-web",
+    port: mode === 'development' ? 8080 : undefined,
   },
-  base: "https://pautave.github.io/smooth-scroll-ascend-web",
   plugins: [
     react(),
     mode === 'development' &&
