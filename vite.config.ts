@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  base: "https://pautave.github.io/smooth-scroll-ascend-web",
   plugins: [
     react(),
     mode === 'development' &&
